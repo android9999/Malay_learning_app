@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>volpino</title>
+        <link rel="stylesheet"
+        href="style.css"
+        type="text/css">
+
+        <script src="script.js"></script>
+
+    </head>
+
+    <body onload="hide()">
+        
+    <button ondblclick="start()" id="start">start</button>
+    <input id="repetitions" type="number" min="1" max="5" value="1">repetitions</input>
+
+    <div id="app">
+
+        <h1>Malay</h1>
+
+        <div id="container">
+            <p id="frase">i topi non avevano nipoti</p>
+            <p>traduci la frase in Malay</p>
+            <p><input type="text" onkeydown="convalida(this.value)" id="risposta"></input></p>
+            <p id="hint">hint</p>
+            <p id="hint_button"><button onclick="mostra_indizio()">show hint</button></p>
+            <p id="skip_button"><button onclick="skip()">skip this</button></p>
+        </div>
+
+    </div>
+
+    </body>
+</html>             
