@@ -82,4 +82,27 @@ button {
     text-align: center;
 }
 
+#password{
+    position: fixed;
+    height: 5%;
+    width: 40%;
+    left: 30%;
+    top: 65%;
+    font-size: 30pt;
+    text-align: center;
+}
+
+#password > input {
+    width: 100%;
+}
+
+#request{
+
+    text-align: center;
+    position: relative;
+}
+
+.nascosto { display: none; }
+
+
 

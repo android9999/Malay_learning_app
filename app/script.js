@@ -1,10 +1,10 @@
 
 let frasi_malesi =
 [
-    "Yati suka bermain dengan Yaya yang selalu ceria",
+    "Yati suka bermain dengan Yaya yang selalu ceria", //yang
     "Yadi membantu Yati yang penat selepas sekolah",
-    "Yaya menunggu Yadi yang datang bersama Yati",
-    "Yati dan Yaya sudah sampai di rumah",
+    "Yaya menunggu Yadi yang datang bersama Yati", 
+    "Yati dan Yaya sudah sampai di rumah", //dan
     "Yadi dah makan nasi goreng pagi tadi",
     "Dak kecil itu bermain dam dengan kawannya di taman",
     "\"Daa, Yati dah menang main dam, dan Dak kecil itu kalah,\" kata Yadi sambil ketawa"
@@ -25,15 +25,27 @@ let frasi_italiane =
 
 
 
-
 let i;
 let hint;
 let hint_button;
 let risposta;
 let frase;
-let repetition_label;
 let repetitions;
 let times;
+let password;
+
+function convalidate_password(password){
+
+    alert(password);
+
+    switch (password) {
+        case "dan":
+            i=3;
+            break;
+        default:
+            i=0;
+    }
+}
 
 function hide(){
     document.getElementById("app").style.display = "none";
@@ -41,19 +53,21 @@ function hide(){
 
 function start(){
 
-    repetition_label = document.getElementById("repetitions");
-    
-    repetitions = repetition_label.value;
-    repetition_label.style.display = "none";
     document.getElementById("app").style.display = "block";
-    document.getElementById("start").style.display = "none";
+    hint_button = document.getElementById("hint_button").children[0];
     risposta = document.getElementById("risposta");
-    i=0;
     hint = document.getElementById("hint");
     frase = document.getElementById("frase");
+
+
+    document.querySelectorAll(".starting_menu").forEach(el => el.style.display = "none");
+
+    convalidate_password(document.getElementById("password").value);
+
+
     frase.innerHTML= frasi_italiane[i];
+    repetitions = document.getElementById("repetitions").value;
     times=0;
-    hint_button = document.getElementById("hint_button").children[0];
 }
 
 function skip(){

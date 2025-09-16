@@ -14,8 +14,12 @@
 
     <body onload="hide()">
         
-    <button ondblclick="start()" id="start">start</button>
-    <input id="repetitions" type="number" min="1" max="5" value="1">repetitions</input>
+    <button ondblclick="start()" id="start" class="starting_menu">start</button>
+    <input id="repetitions" type="number" min="1" max="5" value="1" class="starting_menu">repetitions</input>
+    <div class="starting_menu">
+    <input type="text" id="password"></input>
+    <p id="request">insert password</p>
+    </div>
 
     <div id="app">
 
