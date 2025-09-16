@@ -1,23 +1,37 @@
-let i;
-let hint;
-let hint_button;
-let risposta;
-let frase;
-let repetition_label;
+
 let frasi_malesi =
 [
     "Yati suka bermain dengan Yaya yang selalu ceria",
     "Yadi membantu Yati yang penat selepas sekolah",
-    "Yaya menunggu Yadi yang datang bersama Yati"
+    "Yaya menunggu Yadi yang datang bersama Yati",
+    "Yati dan Yaya sudah sampai di rumah",
+    "Yadi dah makan nasi goreng pagi tadi",
+    "Dak kecil itu bermain dam dengan kawannya di taman",
+    "\"Daa, Yati dah menang main dam, dan Dak kecil itu kalah,\" kata Yadi sambil ketawa"
 ]
 
 let frasi_italiane =
 [
     "Yati ama giocare con Yaya che è sempre allegra",
     "Yadi aiuta Yati che è stanca dopo la scuola",
-    "Yaya aspetta Yadi che arriva insieme a Yati"
+    "Yaya aspetta Yadi che arriva insieme a Yati",
+    "Yati e Yaya sono già arrivate a casa",
+    "Yadi ha già mangiato riso fritto stamattina",
+    "Quel bambino piccolo gioca a dama con il suo amico al parco",
+    "\"Ehi, Yati ha già vinto a dama, e quel bambino ha perso,\" disse Yadi ridendo"
 ]
 
+
+
+
+
+
+let i;
+let hint;
+let hint_button;
+let risposta;
+let frase;
+let repetition_label;
 let repetitions;
 let times;
 
